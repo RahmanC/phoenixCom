@@ -21,7 +21,7 @@ import {
   PRODUCT_REVIEW_FAIL,
 } from "../constants/productConstants";
 
-export const baseUrl = "https://e-commerce-server-beta.vercel.app"
+export const baseUrl = process.env.REACT_APP_URL
 
 export const listProducts =
   (keyword = "", pageNumber = "") =>
